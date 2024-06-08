@@ -9,11 +9,15 @@ public class Test {
 		
 		int[] testArray = randomArray(20, 100);
 		
-		printArray(testArray);
-		
-		Sorter.insertionSort(testArray);
+		int[] testArray2 = testArray;
 		
 		printArray(testArray);
+		
+		Sorter.mergeSort(testArray);
+		Sorter.bubbleSort(testArray2);
+		
+		printArray(testArray);
+		printArray(testArray2);
 
 	}
 
